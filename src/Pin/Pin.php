@@ -1,8 +1,7 @@
 <?php
 
-namespace PiPHP\GPIO\Pin;
-
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'PinInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../FileSystem/FileSystemInterface.php');
 
 abstract class Pin implements PinInterface
 {

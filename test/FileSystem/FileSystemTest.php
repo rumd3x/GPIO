@@ -1,6 +1,6 @@
 <?php
 
-namespace PiPHP\Test\GPIO\FileSystem;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../src/FileSystem/FileSystem.php');
 
 use PiPHP\GPIO\FileSystem\FileSystem;
 

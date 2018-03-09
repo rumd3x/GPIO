@@ -1,8 +1,8 @@
 <?php
 
-namespace PiPHP\GPIO\Pin;
-
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Pin.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'OutputPinInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../FileSystem/FileSystemInterface.php');
 
 final class OutputPin extends Pin implements OutputPinInterface
 {

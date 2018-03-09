@@ -1,9 +1,8 @@
 <?php
 
-namespace PiPHP\Test\GPIO\Pin;
 
-use PiPHP\GPIO\GPIO;
-use PiPHP\Test\GPIO\FileSystem\VFS;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../src/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../FileSystem/VFS.php');
 
 class InputPinTest extends \PHPUnit_Framework_TestCase
 {

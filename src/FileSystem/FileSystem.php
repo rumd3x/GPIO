@@ -1,6 +1,6 @@
 <?php
 
-namespace PiPHP\GPIO\FileSystem;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'FileSystemInterface.php');
 
 final class FileSystem implements FileSystemInterface
 {

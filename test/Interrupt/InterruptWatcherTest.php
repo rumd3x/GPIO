@@ -1,9 +1,7 @@
 <?php
 
-namespace PiPHP\Test\GPIO;
-
-use PiPHP\GPIO\GPIO;
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../src/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../src/FileSystem/FileSystemInterface.php');
 
 class InterruptWatcherTest extends \PHPUnit_Framework_TestCase
 {

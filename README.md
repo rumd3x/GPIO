@@ -1,4 +1,4 @@
-# PiPHP: GPIO
+# PiPHP: GPIO - Composerless
 
 [![Latest Stable Version](https://poser.pugx.org/piphp/gpio/v/stable)](https://packagist.org/packages/piphp/gpio)
 [![Build Status](https://scrutinizer-ci.com/g/PiPHP/GPIO/badges/build.png?b=master)](https://scrutinizer-ci.com/g/PiPHP/GPIO/build-status/master)
@@ -13,20 +13,14 @@ By [AndrewCarterUK ![(Twitter)](http://i.imgur.com/wWzX9uB.png)](https://twitter
 
 ## Installing
 
-Using [composer](https://getcomposer.org/):
-
-`composer require piphp/gpio`
-
-Or:
-
-`php composer.phar require piphp/gpio`
+Download the zip and require the necessary classes.
 
 ## Examples
 
 ### Setting Output Pins
 ```php
-use PiPHP\GPIO\GPIO;
-use PiPHP\GPIO\Pin\PinInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../src/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../src/Pin/PinInterface.php');
 
 // Create a GPIO object
 $gpio = new GPIO();
@@ -40,8 +34,8 @@ $pin->setValue(PinInterface::VALUE_HIGH);
 
 ### Input Pin Interrupts
 ```php
-use PiPHP\GPIO\GPIO;
-use PiPHP\GPIO\Pin\InputPinInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../src/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../src/Pin/InputPinInterface.php');
 
 // Create a GPIO object
 $gpio = new GPIO();

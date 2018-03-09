@@ -1,9 +1,8 @@
 <?php
 
-namespace PiPHP\GPIO\Interrupt;
-
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
-use PiPHP\GPIO\Pin\InputPinInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'InterruptWatcherInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../Pin/InputPinInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../FileSystem/FileSystemInterface.php');
 
 class InterruptWatcher implements InterruptWatcherInterface
 {

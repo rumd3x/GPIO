@@ -1,7 +1,5 @@
 <?php
 
-namespace PiPHP\GPIO\Pin;
-
 interface OutputPinInterface extends PinInterface
 {
     /**

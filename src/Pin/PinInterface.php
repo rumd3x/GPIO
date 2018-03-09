@@ -1,7 +1,5 @@
 <?php
 
-namespace PiPHP\GPIO\Pin;
-
 interface PinInterface
 {
     const VALUE_LOW = 0;

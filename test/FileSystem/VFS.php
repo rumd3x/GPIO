@@ -1,8 +1,6 @@
 <?php
 
-namespace PiPHP\Test\GPIO\FileSystem;
-
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../src/FileSystem/FileSystemInterface.php');
 
 class VFS implements FileSystemInterface
 {

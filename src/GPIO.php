@@ -1,12 +1,11 @@
 <?php
 
-namespace PiPHP\GPIO;
-
-use PiPHP\GPIO\FileSystem\FileSystem;
-use PiPHP\GPIO\FileSystem\FileSystemInterface;
-use PiPHP\GPIO\Interrupt\InterruptWatcher;
-use PiPHP\GPIO\Pin\InputPin;
-use PiPHP\GPIO\Pin\OutputPin;
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIOInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Pin/InputPin.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Pin/OutputPin.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'FileSystem/FileSystem.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'FileSystem/FileSystemInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Interrupt/InterruptWatcher.php');
 
 final class GPIO implements GPIOInterface
 {

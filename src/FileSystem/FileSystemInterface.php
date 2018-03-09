@@ -1,7 +1,5 @@
 <?php
 
-namespace PiPHP\GPIO\FileSystem;
-
 interface FileSystemInterface
 {
     /**
