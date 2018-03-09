@@ -4,14 +4,14 @@ A library for low level access to the GPIO pins on a Raspberry Pi. These pins ca
 
 ## Installing
 
-Download the zip and require the GPIO.php file when needed.
+Download the zip, put the files to your project and require the needed files.
 
 ## Examples
 
 ### Setting Output Pins
 ```php
-require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO.php');
-require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Pin/PinInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO/Pin/PinInterface.php');
 
 // Create a GPIO object
 $gpio = new GPIO();
@@ -25,8 +25,8 @@ $pin->setValue(PinInterface::VALUE_HIGH);
 
 ### Input Pin Interrupts
 ```php
-require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO.php');
-require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Pin/InputPinInterface.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO/GPIO.php');
+require_once realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'GPIO/Pin/InputPinInterface.php');
 
 // Create a GPIO object
 $gpio = new GPIO();
