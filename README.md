@@ -4,7 +4,7 @@ A library for low level access to the GPIO pins on a Raspberry Pi. These pins ca
 
 ## Installing
 
-Download the zip, put the files to your project and require the needed files.
+Download the zip, include the "GPIO" folder in your project and require any needed files in your php script.
 
 ## Examples
 
